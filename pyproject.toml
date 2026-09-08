@@ -1,0 +1,36 @@
+[project]
+name = "sih-sentinel"
+version = "0.1.0"
+description = "Passive diode-fed AI/ML network threat detection pipeline"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "nfstream>=6.5.4",
+    "confluent-kafka>=2.5.0",
+    "redis>=5.0.0",
+    "psycopg[binary]>=3.2.0",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.3.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "scikit-learn>=1.5.0",
+    "river>=0.21.0",
+    "numpy>=1.26.0",
+    "scipy>=1.13.0",
+    "joblib>=1.4.0",
+    "msgpack>=1.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

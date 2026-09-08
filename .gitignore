@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/*.pcap
+data/*.pcapng
+models/artifacts/*.joblib
+dashboard/node_modules/
+dashboard/.next/
+.pytest_cache/
+.ruff_cache/
