@@ -108,7 +108,7 @@ class Alert(BaseModel):
         severity: Severity,
         evidence: dict[str, Any],
         ts: float | None = None,
-    ) -> "Alert":
+    ) -> Alert:
         return cls(
             ts=ts if ts is not None else flow.ts_end,
             flow_id=flow.flow_id,

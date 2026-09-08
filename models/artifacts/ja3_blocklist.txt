@@ -1,0 +1,9 @@
+# Known-bad JA3/JA3S TLS client/server fingerprints (one hash per line, '#' comments).
+# Sample entries for the prototype — in production, feed from threat-intel sources
+# (e.g. abuse.ch SSLBL JA3 fingerprints). JA3 matching works on real captures where
+# nfstream extracts the fingerprint from the TLS ClientHello.
+#
+# Format: md5 JA3 hash (lowercase hex)
+e7d705a3286e19ea42f587b344ee6865   # sample: known trickbot-family client JA3
+a0e9f5d64349fb13191bc781f81f42e1   # sample: known malware C2 client JA3
+6734f37431670b3ab4292b8f60f29984   # sample: known cobaltstrike default JA3

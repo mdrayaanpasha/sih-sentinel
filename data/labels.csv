@@ -1,0 +1,7 @@
+threat_class,match_field,match_ip,description
+portscan,src,10.2.0.5,"vertical port scan, 60 ports"
+flood,dst,10.0.0.30,SYN flood from 60 sources
+beaconing,src,10.2.0.6,"C2 beacon every 2s, 12 beacons"
+dga_dns,src,10.2.0.7,DGA lookups + DNS tunneling
+tls_malware,src,10.2.0.8,robotic TLS: small uniform payloads
+exfil,src,10.2.0.9,5.9 MB outbound bulk transfer
